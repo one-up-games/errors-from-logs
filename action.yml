@@ -1,0 +1,10 @@
+name: 'Errors form Unity log file'
+description: 'Outputs Unity errors to github summary'
+author: 'Maxim Matveev'
+inputs:
+  logFile:
+    description: 'Unity log file'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
