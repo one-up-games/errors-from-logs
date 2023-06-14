@@ -8,7 +8,7 @@ status=$?
 
 echo $status
 
-if [$status -eq 0 ]; then
+if [ $status -eq 0 ]; then
 	for item in $result
 	do
 		echo -e "$item" >> "$GITHUB_STEP_SUMMARY"
