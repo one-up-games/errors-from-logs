@@ -6,8 +6,8 @@ inputs:
     description: 'Unity log file'
     required: true
 outputs:
-  result: # release id
-    description: 'Release id'    
+  result: # result
+    description: 'result'    
 runs:
   using: 'docker'
   image: 'Dockerfile'
