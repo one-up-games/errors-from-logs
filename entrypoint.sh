@@ -6,6 +6,7 @@ status=$?
 
 if [ "$status" -eq 0 ]; then
 	echo "result=$result" >> $GITHUB_OUTPUT
+	echo $result
 fi
 
 exit 0
