@@ -2,8 +2,8 @@
 
 result=$(grep "error CS" ${INPUT_LOGFILE})
 
-echo $result
+printf $result
 
-echo "result=$result" >> "$GITHUB_OUTPUT"
+printf "result=$result" >> "$GITHUB_OUTPUT"
 
 exit 0
