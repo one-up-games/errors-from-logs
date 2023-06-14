@@ -4,7 +4,7 @@ result=$(grep "error" ${INPUT_LOGFILE})
 
 echo $result
 
-result="test"
+result=$result
 
 echo "result=$result" >> $GITHUB_OUTPUT
 
