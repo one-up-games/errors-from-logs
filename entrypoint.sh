@@ -2,11 +2,7 @@
 
 result=$(grep "error cs" ${INPUT_LOGFILE})
 
-status=$?
-
-if [ "$status" -eq 0 ]; then
-	echo "result=$result" >> $GITHUB_OUTPUT
-	echo $result
-fi
+echo $result
+echo "result=$result" >> $GITHUB_OUTPUT
 
 exit 0
