@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo ${INPUT_LOGFILE}
+
 result=$(grep "error cs" ${INPUT_LOGFILE})
 
 echo $result
