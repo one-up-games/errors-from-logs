@@ -5,6 +5,9 @@ inputs:
   logFile:
     description: 'Unity log file'
     required: true
+outputs:
+  result: # release id
+    description: 'Release id'    
 runs:
   using: 'docker'
   image: 'Dockerfile'
