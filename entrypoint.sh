@@ -6,8 +6,6 @@ result=$(grep "error" ${INPUT_LOGFILE})
 
 status=$?
 
-echo $status
-
 if [ $status -eq 0 ]; then
 	for item in $result
 	do
