@@ -1,8 +1,6 @@
 #!/bin/bash
 
-IFS=$'\n'
-
-result=$(grep "error CS" ${INPUT_LOGFILE})
+result=$(grep "error" ${INPUT_LOGFILE})
 
 for item in $result
 do
