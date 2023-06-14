@@ -1,6 +1,6 @@
 #!/bin/bash
 
-result=$(grep "error" ${INPUT_LOGFILE})
+result=$(grep "error CS" ${INPUT_LOGFILE})
 
 echo $result
 
