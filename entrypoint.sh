@@ -2,7 +2,7 @@
 
 IFS=$'\n'
 
-result=$(grep "error" -i ${INPUT_LOGFILE})
+result=$(grep "error\|exception" -i ${INPUT_LOGFILE})
 
 status=$?
 
