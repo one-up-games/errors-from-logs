@@ -6,9 +6,5 @@ inputs:
     description: 'Unity log file'
     required: true
 runs:
-  using: "composite"
-  steps:
-    - run: docker pull public.ecr.aws/docker/library/node:lts-alpine3.20
-      shell: bash
   using: 'docker'
   image: 'Dockerfile'
